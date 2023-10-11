@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/vacio"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vacio"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            tools:text="HOLA"/>
+
+        <TextView
+            android:id="@+id/item_especificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/MagicalMerlin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_nombre"
+            app:layout_constraintStart_toEndOf="@+id/vacio"
+            tools:text="HOLA"/>
+
+        <TextView
+            android:id="@+id/item_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/CoolBlue"
+            app:layout_constraintTop_toBottomOf="@+id/item_especificacion"
+            app:layout_constraintStart_toEndOf="@+id/vacio"
+            tools:text="HOLA"/>
+
+        <TextView
+            android:id="@+id/item_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/CoolBlue"
+            app:layout_constraintTop_toBottomOf="@+id/item_especificacion"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="HOLA"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
