@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ListaCompras</string>
+
+    //Nombre
+    <string name="Main">Lista de compras</string>
+    <string name="Lugares">Locales de compra</string>
+    <string name="Compras">Compras</string>
+    <string name="Inventario">Inventario</string>
+
+    //Texto Splash
+    <string name="Compañia">LircayHUB</string>
+    <string name="Nombre">Diego Valderrama</string>
+    <string name="Correo">dvalderrama20@alumnos.utalca.cl</string>
+
+    //Texto Ejemplo?
+
+    //Extra
+    <string name="Regresar">Regresar</string>
+    <string name="Sumar">+</string>
+</resources>
