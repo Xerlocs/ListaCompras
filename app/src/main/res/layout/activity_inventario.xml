@@ -8,8 +8,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="469dp"
-        android:layout_height="74dp"
+        android:layout_width="429dp"
+        android:layout_height="79dp"
+        android:layout_gravity="top|center"
         android:background="@color/PorpoiseFin"
         android:shadowColor="@color/PorpoiseFin"
         android:text="@string/Inventario"
@@ -29,9 +30,11 @@
         android:layout_marginBottom="16dp"
         android:text="@string/Sumar"
         android:textSize="30sp"
+        android:layout_gravity="bottom|end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

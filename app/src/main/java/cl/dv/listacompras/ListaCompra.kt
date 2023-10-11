@@ -4,13 +4,33 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import cl.dv.listacompras.adapter.comprasAdapter
+import cl.dv.listacompras.databinding.ActivityListaCompraBinding
 
 class ListaCompra : AppCompatActivity() {
+
+    private lateinit var binding: ActivityListaCompraBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_compra)
+        binding = ActivityListaCompraBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initRecyclerView()
 
     }
+
+    private fun initRecyclerView(){
+        val manager = LinearLayoutManager(this)
+
+        val decoration = DividerItemDecoration(this, manager.orientation)
+
+        binding.recyclerCompras.layoutManager = manager
+        binding.recyclerCompras.adapter = comprasAdapter(comprasProvider.compraList)
+        binding.recyclerCompras.addItemDecoration(decoration)
+    }
+
 }
 
 //Listar las cosas a comprar

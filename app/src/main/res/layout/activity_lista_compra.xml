@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +10,9 @@
         android:id="@+id/textView4"
         android:layout_width="469dp"
         android:layout_height="74dp"
+        android:layout_gravity="top|center"
         android:background="@color/PorpoiseFin"
+        android:fontFamily="sans-serif"
         android:shadowColor="@color/PorpoiseFin"
         android:text="@string/Compras"
         android:textAlignment="center"
@@ -26,6 +28,7 @@
         android:id="@+id/agregarButton"
         android:layout_width="63dp"
         android:layout_height="67dp"
+        android:layout_gravity="bottom|end"
         android:layout_marginBottom="16dp"
         android:text="@string/Sumar"
         android:textSize="30sp"
@@ -34,4 +37,10 @@
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCompras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"/>
+
+</FrameLayout>
